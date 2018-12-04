@@ -6,4 +6,6 @@
 4. taptap.jr-b.de/
 5. moodle.jr-b.de/
 
+## License
+
 
