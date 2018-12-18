@@ -4,6 +4,7 @@
 <meta charset=utf-8>
 <title>Jan Bock - Webdesign &amp; Digital Marketing</title>
 <meta name=theme-color content=#343A40>
+<link rel=manifest href="manifest.json">
 <meta name=description content="📌Ihr Partner für Digitales Marketing und Webdesign | ☎️kostenfreie Beratung vereinbaren | Konzeption | Webdesign | Entwicklung von digitalen und analogen Inhalten">
 <meta name=author content="Jan Bock, Schwetzingen, 2018">
 <meta name=viewport content="width=device-width, initial-scale=1">
@@ -41,19 +42,19 @@
 </ul>
 <p> Ihr persönlicher Partner für digitales und analoges Design.</p>
 <ul class=header-nav__social>
-<li>
-<a href=https://medium.com/@janbock><i class="fab fa-medium"></i></a>
-</li>
-<li>
-<a href=https://twitter.com/janeinbock><i class="fab fa-twitter"></i></a>
-</li>
-<li>
-<a href=https://www.xing.com/profile/Jan_Bock10/><i class="fab fa-xing"></i></a>
-</li>
+  <li>
+    <a href=https://medium.com/@janbock aria-label="medium"><i class="fab fa-medium"></i></a>
+    </li>
+    <li>
+    <a href=https://twitter.com/janeinbock aria-label="twitter"><i class="fab fa-twitter"></i></a>
+    </li>
+    <li>
+    <a href=https://www.xing.com/profile/Jan_Bock10 aria-label="xing"><i class="fab fa-xing"></i></a>
+    </li>
 </ul>
 </div>
 </nav>
-<a class=header-menu-toggle href=#0>
+<a class=header-menu-toggle href=#0 aria-label="menu">
 <span class=header-menu-icon></span>
 </a>
 </header>
@@ -332,11 +333,11 @@ E-Learning
 Learn-Management-System
 </p>
 </div>
-<a href=http://moodle.jr-b.de/ class=item-folio__project-link title="Project link">
+<a href=moodle.jr-b.de/ class=item-folio__project-link title="Project link">
 <i class=icon-link></i>
 </a>
 <div class=item-folio__caption>
-<p><a href=http://moodle.jr-b.de/>www.moodle.jr-b.de</a></p>
+<p><a href=moodle.jr-b.de/ >www.moodle.jr-b.de</a></p>
 </div>
 </div>
 </div>
@@ -419,13 +420,13 @@ Ketscher Str. 36 <br>
 </p>
 <ul class=contact-social>
 <li>
-<a href=https://medium.com/@janbock><i class="fab fa-medium"></i></a>
+<a href=https://medium.com/@janbock aria-label="medium"><i class="fab fa-medium"></i></a>
 </li>
 <li>
-<a href=https://twitter.com/janeinbock><i class="fab fa-twitter"></i></a>
+<a href=https://twitter.com/janeinbock aria-label="twitter"><i class="fab fa-twitter"></i></a>
 </li>
 <li>
-<a href=https://www.xing.com/profile/Jan_Bock10/><i class="fab fa-xing"></i></a>
+<a href=https://www.xing.com/profile/Jan_Bock10 aria-label="xing"><i class="fab fa-xing"></i></a>
 </li>
 </ul>
 </div>
@@ -473,5 +474,11 @@ Ketscher Str. 36 <br>
 <script src=js/jquery-3.2.1.min.js></script>
 <script src=js/plugins.js></script>
 <script src=js/main.js></script>
-<link rel=manifest href=/manifest.json>
+<script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('/sw.js')
+               .then(function() { console.log("Service Worker Registered"); });
+    }
+    </script>
 </body>

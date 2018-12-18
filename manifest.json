@@ -1,11 +1,11 @@
 {
   "name": "Jan Bock Webdesign",
-  "short_name": "Webdesign queck and Easy",
+  "short_name": "Jan Bock",
   "theme_color": "#793ea5",
   "background_color": "#121212",
-  "display": "browser",
+  "display": "fullscreen",
   "Scope": "/",
-  "start_url": "/",
+  "start_url": "/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
